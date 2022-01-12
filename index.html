@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="build/css/styles.css" />
+    <link rel="shortcut icon" href="img/favicon.png">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -29,7 +30,7 @@
             Visita nuestros locales y disfruta el placer del mejor café en
             compañía de tus amigos.
           </p>
-          <a href="#" class="btn btn-primary">Conoce más</a>
+          <a href="#productos" class="btn btn-primary">Conoce más</a>
         </div>
         <div class="col-md-6">
           <img
@@ -42,46 +43,129 @@
     </header>
 
     <section class="container">
-      <h2 class="fs-1 text-center">Nuestros Productos</h2>
-      <p class="text-center w-50 mx-auto">
-        Conoce las distintas variedades de cafés, tés, pasteles y postres, todo
-        artesanal, hecho por nuestras manos, maestras del dulce. Ambiente
-        acogedor, especial para disfrutar los mejores momentos. Tenemos una
-        amplia carta, que siempre te sorprenderá.
-      </p>
+      <h2 id="productos" class="fs-1 mb-5 text-center">Nuestros Productos</h2>
 
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-6 cafeteria">
           <figure>
-            <img
-              class="img-fluid"
-              src="img/pastel2.png"
-              alt="imagen de pastel de chocolate"
-            />
+            <img class="img-fluid w-50 coffe" src="img/tazacafe1.png" alt="café" />
           </figure>
-          <h3 class="text-secondary fs-4">Lorem ipsum dolor</h3>
-          <p class="">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
+          <h3 class="text-secondary fs-4 mb-4">Cafetería.</h3>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary mt-5"
-            data-bs-toggle="modal" data-bs-target="#exampleModal"
+          <button type="button" class="btn btn-primary mt-4"
+            data-bs-toggle="modal" data-bs-target="#exampleModal2"
           >
-            Ver más...
+            Ver productos
           </button>
 
           <!-- Modal -->
           <div
             class="modal fade"
-            id="exampleModal"
+            id="exampleModal2"
             tabindex="-1"
             aria-labelledby="exampleModalLabel"
             aria-hidden="true"
           >
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">
+                  <h5 class="modal-title text-secondary fs-4" id="exampleModalLabel">
+                    Cafetería
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <figure>
+                            <img class="img-fluid" src="img/tazacafe1.png" alt="Café cortado" />
+                          </figure>
+                          <h5 class="card-title text-secondary fs-4">Café cortado</h5>
+                          <p class="card-text">Café expresso con leche vaporizada.</p>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <figure>
+                            <img class="img-fluid" src="img/cafe-helado.png" alt="Café helado" />
+                          </figure>
+                          <h5 class="card-title text-secondary fs-4">Café helado</h5>
+                          <p class="card-text">Café con leche, helado de vainilla y crema chantilly.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <figure>
+                            <img class="img-fluid" src="img/chocolate-caliente.png" alt="Chocolate caliente" />
+                          </figure>
+                          <h5 class="card-title text-secondary fs-4">Chocolate caliente</h5>
+                          <p class="card-text">Leche y cacao en polvo con una pizca de canela y aníz.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <br>
+                          <figure>
+                            <img class="img-fluid" src="img/expresso.png" alt="Café expresso" />
+                          </figure>
+                          <br>
+                          <h5 class="card-title text-secondary fs-4 mt-1">Expresso</h5>
+                          <p class="card-text">Café de grano molido.</p>
+                          <br>
+                          <br>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 bakery">
+          <figure>
+            <img
+              class="img-fluid w-50 pastel"
+              src="img/tiramisu.png"
+              alt="imagen Tiramisú"
+            />
+          </figure>
+          <h3 class="text-secondary fs-4 mb-4">Pastelería.</h3>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary mt-4"
+            data-bs-toggle="modal" data-bs-target="#exampleModal3"
+          >
+            Ver productos
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal3"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-secondary fs-4" id="exampleModalLabel">
                     Lorem ipsum dolor
                   </h5>
                   <button
@@ -92,56 +176,82 @@
                   ></button>
                 </div>
                 <div class="modal-body">
-                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit tristique interdum, tincidunt proin non odio phasellus orci aliquam dui molestie vehicula cursus, donec class rhoncus cum enim sapien himenaeos hendrerit nam. Aenean nibh ante faucibus duis eu iaculis consequat etiam commodo, nostra habitasse proin metus facilisi vel luctus vivamus at, magna cursus posuere quis cum porttitor et mus. Blandit lacinia nascetur hendrerit integer mi vivamus nec cursus ut natoque ridiculus, congue fringilla ante sollicitudin porta velit fames placerat sociis et eros, fermentum imperdiet donec pellentesque pretium class viverra eget maecenas a. Aliquet laoreet sociosqu auctor vel a eu hac quis, rutrum quam nunc per varius vulputate facilisis praesent, nibh pellentesque id sapien habitant blandit sollicitudin.</p>
-                </div>
-                <div class="modal-footer">
+                  <div class="row">
+                    <div class="col-sm-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <figure>
+                            <img
+                              class="img-fluid"
+                              src="img/tiramisu.png"
+                              alt="Tiramisú"
+                            />
+                          </figure>
+                          <h5 class="card-title text-secondary fs-5">Tiramisú</h5>
+                          <p class="card-text">Bizcocho en café, relleno con crema y decorado con cacao en polvo, café y azucar glass.</p>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <figure>
+                            <img
+                              class="img-fluid"
+                              src="img/red-velvet.png"
+                              alt="Red velvet"
+                            />
+                          </figure>
+                          <h5 class="card-title text-secondary fs-5">Red velvet</h5>
+                          <p class="card-text">Bizcocho humedo rellena de queso crema dulce.</p>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <figure>
+                            <img
+                              class="img-fluid"
+                              src="img/pastel-frutilla.png"
+                              alt="Torta frutilla"
+                            />
+                          </figure>
+                          <h5 class="card-title text-secondary fs-5">Torta frutilla</h5>
+                          <p class="card-text">Bizcocho en café, relleno con crema y decorado con cacao en polvo, café y azucar glass.</p>
+                          <br>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <figure>
+                            <img
+                              class="img-fluid"
+                              src="img/pastel2.png"
+                              alt="Torta de chocolate"
+                            />
+                          </figure>
+                          <h5 class="card-title text-secondary fs-5">Torta chocolate</h5>
+                          <p class="card-text ">Bizcocho de chocolate, relleno de ganache de chocolate y mermelada de cerezas y con un baño de chocolate bitter decorado con frutos secos.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-md-4">
-          <figure>
-            <img class="img-fluid" src="img/tazacafe1.png" alt="café" />
-          </figure>
-          <h3 class="text-secondary text-center fs-4">Lorem ipsum dolor</h3>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ad
-            error illo quo vitae. Dolores ipsa quod nostrum nisi velit? Expedita
-            nam accusamus minima ut reiciendis quos consequatur autem
-            cupiditate?
-          </p>
-        </div>
-
-        <div class="col-md-4">
-          <figure>
-            <img
-              class="img-fluid"
-              src="img/tiramisu.png"
-              alt="imagen Tiramisú"
-            />
-          </figure>
-          <h3 class="text-secondary text-center fs-4">Lorem ipsum dolor</h3>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ad
-            error illo quo vitae. Dolores ipsa quod nostrum nisi velit? Expedita
-            nam accusamus minima ut reiciendis quos consequatur autem
-            cupiditate?
-          </p>
-        </div>
-      </div>
-      <div class="d-flex justify-content-center my-5">
-        <a href="#" class="btn btn-secondary text-white">Más Información</a>
       </div>
     </section>
 
     <main class="container locales my-5">
       <div class="d-flex justify-content-between">
         <h2>Nuestros Locales</h2>
-        <a href="#" class="text-decoration-none d-none d-sm-block"
-          >Explora más locales</a
-        >
       </div>
 
       <div class="row">
@@ -233,3 +343,4 @@
   </body>
 </html>
 <script src="index.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
